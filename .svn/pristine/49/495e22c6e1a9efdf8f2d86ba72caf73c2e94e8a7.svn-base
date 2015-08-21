@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.job5156.jsDateJoin.entity.PersonSchool" dynamic-insert="true" dynamic-update="true"  table="user_school">
+    <id name="id" type="java.lang.Integer" unsaved-value="null" >
+		<column name="schoolid" not-null="true"/>
+		<generator class="native"/>
+	</id>
+	<property name="userid" />
+	<property name="degree" />
+	<property name="begindateyear" />
+	<property name="begindatemonth" />
+	<property name="enddateyear" />
+	<property name="enddatemonth" />
+	<property name="school" />
+	<property name="speciality" />
+	<property name="certificate" />
+	<property name="cre_date" />
+	<property name="rev_date" />
+	<property name="course" />
+	<property name="flag" />
+	
+</class>
+</hibernate-mapping>

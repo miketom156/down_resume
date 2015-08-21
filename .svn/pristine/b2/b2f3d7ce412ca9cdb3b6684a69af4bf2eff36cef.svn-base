@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.job5156.foshan.FoShanResume" dynamic-insert="true" dynamic-update="true" lazy="false" table="FoShan_Resume">
+    <id name="id" type="java.lang.Integer" unsaved-value="null" >
+		<column name="id" not-null="true"/>
+		<generator class="native"/>
+	</id>
+	<property name="revDate" />
+	<property name="userName" />
+	<property name="jobType" />
+	<property name="sex" />
+	<property name="userAge" />
+	<property name="stature" />
+	<property name="marriage" />
+	<property name="location_c" />
+	<property name="hometown_c" />
+	<property name="salary" />
+	<property name="highDegree" />
+	<property name="jobyear" />
+	<property name="school" />
+	<property name="special" />
+	<property name="computerLever" />
+	<property name="englishLever" />
+	<property name="jobLocation1" />
+	<property name="jobLocation2" />
+	<property name="jobLocation3" />
+	<property name="jobcode1" />
+	<property name="jobcode2" />
+	<property name="jobcode3" />
+	<property name="intentInfo" />
+	<property name="schoolText" />
+	<property name="personSkill" />
+	<property name="workText" />
+	<property name="selfappraise" />
+	<property name="phone" />
+	<property name="email" />
+	<property name="mobile" />
+    <property name="postCode" />
+	<property name="homepage" />
+	<property name="address" />
+	<property name="QQ" />
+	<property name="photoStr" />
+	<property name="userId" />
+</class>
+</hibernate-mapping>

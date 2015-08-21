@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.job5156.jsDateJoin.entity.unit" dynamic-insert="true" dynamic-update="true"  table="unit">
+        <id name="id" type="java.lang.Integer" unsaved-value="null" >
+            <column name="id" not-null="true"/>
+            <generator class="native"/>
+        </id>
+        <property name="uid" />
+        <property name="name" />
+        <property name="ename" />
+        <property name="uname" />
+        <property name="pwd" />
+        <property name="pwdquestion" />
+        <property name="pwdanswer" />
+        <property name="superunit" />
+        <property name="artiperson" />
+        <property name="artipersonpost" />
+        <property name="artipersonstru" />
+        <property name="unitproperty" />
+        <property name="regfund" />
+        <property name="regaddress" />
+        <property name="regphone" />
+        <property name="regzipcode" />
+        <property name="busiaddress" />
+        <property name="busizipcode" />
+        <property name="busilicense" />
+        <property name="regunit" />
+        <property name="busiwhat" />
+        <property name="employeea" />
+        <property name="employeeb" />
+        <property name="employeec" />
+        <property name="employeed" />
+        <property name="employeee" />
+        <property name="employeef" />
+        <property name="employeeg" />
+        <property name="employeeh" />
+        <property name="linkman" />
+        <property name="linkmanpost" />
+        <property name="fax" />
+        <property name="phone" />
+        <property name="address" />
+        <property name="zipcode" />
+        <property name="email" />
+        <property name="mobile" />
+        <property name="http" />
+        <property name="infomobile" />
+        <property name="infoemail" />
+        <property name="remark" />
+        <property name="state" />        
+        <property name="busino" />
+        <property name="lastlogintime" />
+        <property name="locked" />
+        <property name="registertime" />
+        <property name="intro" /> 
+    </class>
+</hibernate-mapping>

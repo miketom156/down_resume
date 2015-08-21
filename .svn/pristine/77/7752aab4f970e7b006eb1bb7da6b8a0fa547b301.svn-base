@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.job5156.jsDateJoin.entity.NingboEntity" dynamic-insert="true" dynamic-update="true" table="Content">
+    <id name="id" type="java.lang.Integer" unsaved-value="null" >
+		<column name="referenceid" not-null="true"/>
+		<generator class="native"/>
+	</id>
+	<property name="comid" />
+	<property name="statusCai" />
+	<property name="statusFa" />
+	<property name="posname" />
+	<property name="endvaliddate" />
+	<property name="contactperson" />
+	<property name="joblocation1" />
+	<property name="contacttel" />
+	<property name="examaddress" />
+	<property name="reqdegreeid" />
+	<property name="reqsex" />
+	<property name="posdescription" />
+	<property name="reqworkyear" />
+	<property name="cbpanyintroduction" />
+	<property name="cbcontactperson" />
+	<property name="cbcontacttel" />
+	<property name="contactfax" />
+	<property name="address" />
+	<property name="zipcode" />
+	<property name="email" />
+	<property name="cbhomepage" />
+	<property name="jobfunction1" />
+	<property name="comname" />
+	<property name="candidatesnum" />
+	<property name="images" />
+	<property name="url" />
+</class>
+</hibernate-mapping>

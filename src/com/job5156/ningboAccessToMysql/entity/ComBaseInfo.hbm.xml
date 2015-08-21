@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.job5156.ningboAccessToMysql.entity.ComBaseInfo" dynamic-insert="true" dynamic-update="true"  table="Com_BaseInfo"   lazy ="true">
+    <id name="id" type="java.lang.Integer" unsaved-value="null" >
+		<column name="referenceid" not-null="true"/>
+		<generator class="native"/>
+	</id>
+	<property name="comname" />
+	<property name="licencenumber" />
+	<property name="calling" />
+	<property name="properity" />
+	<property name="founddate" />
+	<property name="registerfund" />
+	<property name="currency" />
+	<property name="employeenumber" />
+	<property name="companyintroduction" />
+	<property name="productintroduction" />
+	<property name="contactperson" />
+	<property name="contactposition" />
+	<property name="contactdepartment" />
+	<property name="contacttel" />
+	<property name="telshowflag" />
+	<property name="telshowflag2" />
+	<property name="contactfax" />
+	<property name="email" />
+	<property name="emailshowflag" />
+	<property name="addressp" />
+	<property name="address" />
+	<property name="zipcode" />
+	<property name="homepage" />
+	<property name="mailcode" />
+	<property name="registerdate" />
+	<property name="updatedate" />
+	<property name="comflag" />
+	<property name="lasteditby" />
+	<property name="status" />
+	<property name="filterperid" />
+	<property name="regip" />
+	<property name="addressc" />
+	<property name="interviewadd" />
+	<property name="emailmode" />
+	<property name="contact1" />
+	<property name="contact2" />			
+	<property name="ishunt" />
+	<property name="busway" />		
+	<property name="emailwilling" />
+	<property name="mapBeginDate" />		
+	<property name="mapValidDay" />	
+	<property name="extendFlag" />	
+	<property name="salerId"></property>
+	<property name="salerIssee"></property>
+	<property name="salerName"></property>
+	
+	<!--生成所有的职位-->
+	<set name="fullPosition" inverse="true" lazy ="true" order-by="updatedate desc" cascade="none"> 
+	   <key column="comid"/>
+	   <one-to-many class="com.job5156.ningboAccessToMysql.entity.ComPosition"  />
+	</set>	
+</class>
+</hibernate-mapping>

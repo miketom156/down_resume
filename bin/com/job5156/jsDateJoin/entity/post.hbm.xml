@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.job5156.jsDateJoin.entity.post" dynamic-insert="true" dynamic-update="true"  table="post">
+        <id name="id" type="java.lang.Integer" unsaved-value="null" >
+            <column name="id" not-null="true"/>
+            <generator class="native"/>
+        </id>
+        <property name="pid" />
+        <property name="uid" />
+        <property name="UnitName" />
+        <property name="PostName" />
+        <property name="PositionName" />
+        <property name="Speciality" />
+        <property name="Degree" />
+        <property name="Experience" />
+        <property name="Age" />
+        <property name="Number1" />
+        <property name="Sex" />
+        <property name="Title" />
+        <property name="MonthlyPay" />
+        <property name="WorkPlace" />
+        <property name="ReleaseDate" />
+        <property name="Period" />
+        <property name="Memo" />
+        <property name="VisitNum" />
+        <property name="postnum" />
+        <property name="LocalStation" />
+        <property name="ReleaseStation" />
+        <property name="PreStation" />
+        <property name="PushTime" />
+    </class>
+</hibernate-mapping>

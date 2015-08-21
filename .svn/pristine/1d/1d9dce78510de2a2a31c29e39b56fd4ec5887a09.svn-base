@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.job5156.jsDateJoin.entity.person" dynamic-insert="true" dynamic-update="true"  table="person">
+        <id name="id" type="java.lang.Integer" unsaved-value="null" >
+            <column name="id" not-null="true"/>
+            <generator class="native"/>
+        </id>
+        <property name="pid" />
+        <property name="realname" />
+        <property name="uname" />
+        <property name="pwd" />
+        <property name="pwdquestion" />
+        <property name="pwdanswer" />
+        <property name="cardtype" />
+        <property name="cardno" />
+        <property name="sex" />
+        <property name="birthday" />
+        <property name="nation" />
+        <property name="politics" />
+        <property name="marriage" />
+        <property name="homecity" />
+        <property name="staycity" />
+        <property name="height" />
+        <property name="eyesight" />
+        <property name="photo" />
+        <property name="edulevel1" />
+        <property name="eduuniv1" />
+        <property name="edudate1" />
+        <property name="specialitytype1" />
+        <property name="specialityname1" />
+        <property name="edulevel2" />
+        <property name="eduuniv2" />
+        <property name="edudate2" />
+        <property name="specialitytype2" />
+        <property name="specialityname2" />
+        <property name="techposttype" />
+        <property name="techpostname" />
+        <property name="nowunit" />
+        <property name="startworkdate" />
+        <property name="computerlevel" />
+        <property name="typingspeed" />
+        <property name="foreign1" />
+        <property name="foreignlevel1" />
+        <property name="foreign2" />
+        <property name="foreignlevel2" />
+        <property name="mandarinlevel" />
+        <property name="drivelicense" />
+        <property name="specialty" />
+        <property name="jobcause" />
+        <property name="jobform" />
+        <property name="jobposition1" />
+        <property name="jobposition2" />
+        <property name="jobposition3" />
+        <property name="monthlypay" />
+        <property name="jobcity" />
+        <property name="canout" />
+        <property name="needhouse" />
+        <property name="unittype" />
+        <property name="otherneed" />
+        <property name="edulist" />
+        <property name="worklist" />
+        <property name="aboutself" />
+        <property name="address" />
+        <property name="zipcode" />
+        <property name="phone" />
+        <property name="email" />
+        <property name="secretsetting" />
+        <property name="visitcount" />
+        <property name="state" />
+        <property name="archiveno" />
+        <property name="type" />
+        <property name="lastlogintime" />
+        <property name="highlevel" />
+        <property name="locked" />
+        <property name="specialityinput1" />
+        <property name="specialityinput2" />
+        <property name="registertime" />
+    </class>
+</hibernate-mapping>
