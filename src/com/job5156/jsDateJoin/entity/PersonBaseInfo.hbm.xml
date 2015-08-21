@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.job5156.jsDateJoin.entity.PersonBaseInfo" dynamic-insert="true" dynamic-update="true"  table="user_basicdata">
+    <id name="id" type="java.lang.Integer" unsaved-value="null" >
+		<column name="userid" not-null="true"/>
+		<generator class="native"/>
+	</id>
+	<property name="useraccounts" />
+	<property name="userpassword" />
+	<property name="username" />
+	<property name="sex" />
+	<property name="nation" />
+	<property name="marriage" />
+	<property name="birthday" />
+	<property name="stature" />
+	<property name="cardtype" />
+	<property name="cardtypenum" />
+	<property name="hometown_p" />
+	<property name="hometown_c" />
+	<property name="location_p" />
+	<property name="location_c" />
+	<property name="contact1" />
+	<property name="contact2" />
+	<property name="phone" />
+	<property name="hiddenphone" />
+	<property name="mobile" />
+	<property name="hiddenmobile" />
+	<property name="email" />
+	<property name="hiddenemail" />
+	<property name="im" />
+	<property name="address" />
+	<property name="zipcode" />
+	<property name="highdegree" />
+	<property name="special" />
+	<property name="school" />
+	<property name="homepage" />
+	<property name="cre_date" />
+	<property name="rev_date" />
+	<property name="pass" />
+	<property name="flag" />
+	<property name="readcount" />
+	<property name="logincount" />
+	<property name="resume_set" />
+	<property name="selfappraise" />
+	<property name="jobyear" />
+	<property name="jobmonth" />
+	<property name="jobcount" />
+	<property name="resumetype" />
+	<property name="comid" />
+	<property name="resume_grade" />
+	<property name="lasteditby" />
+	<property name="lastedit" />
+	<property name="passdate" />
+	<property name="comefrom" />
+	<property name="havephoto" />
+	<property name="ip" />
+	<property name="emailwilling" />
+	<property name="changeresumewilling" />
+	<property name="vipMember" />
+	<property name="adduserid" />	
+	<property name="receiveShortMsg" />
+	<property name="menu" />
+	<property name="recommendName" />
+	<property name="recommendPhone" />
+	<property name="perfectInfo" />
+	<property name="openResumeEn" />
+	<property name="fre_date" />
+	<property name="political" />	
+</class>
+</hibernate-mapping>

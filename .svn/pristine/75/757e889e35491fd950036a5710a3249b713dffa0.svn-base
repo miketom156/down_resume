@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.job5156.ningbo.NingBoResume" dynamic-insert="true" dynamic-update="true" lazy="false" table="NingBo_Resume">
+    <id name="id" type="java.lang.Integer" unsaved-value="null" >
+		<column name="id" not-null="true"/>
+		<generator class="native"/>
+	</id>
+	<property name="userName" />
+	<property name="userNameEn" />
+	<property name="sex" />
+	<property name="marriage" />
+	<property name="cardNumber" />
+	<property name="stature" />
+	<property name="birthday" />
+	<property name="nation" />
+	<property name="highDegree" />
+	<property name="hometown_c" />
+	<property name="location_c" />
+	<property name="phone" />
+	<property name="mobile" />
+	<property name="QQorOICQ" />
+	<property name="email" />
+	<property name="zipcode" />
+	<property name="photoUrl" />
+	<property name="jobCode1" />
+	<property name="jobCode2" />
+	<property name="jobCode3" />
+	<property name="salary1" />
+	<property name="salary2" />
+	<property name="salary3" />
+	<property name="jobLocation1" />
+	<property name="jobLocation2" />
+	<property name="jobLocation3" />
+	<property name="languageType1" />
+	<property name="languageType2" />
+	<property name="languageLever1" />
+	<property name="languageLever2" />
+	<property name="jobCalling" />
+	<property name="jobCallingName" />
+	<property name="computerLever" />
+    <property name="jobYear" />
+	<property name="callAddress" />
+	<property name="nowAddress" />
+	<property name="graduateDate" />
+	<property name="selfAppraise" />
+	<property name="schoolText" />
+    <property name="workText" />
+	<property name="personSkill" />
+	<property name="cultivateText" />
+	<property name="certificateText" />
+	<property name="certificateUrl" />
+	<property name="otherInfo" />
+	<property name="userId" />
+</class>
+</hibernate-mapping>

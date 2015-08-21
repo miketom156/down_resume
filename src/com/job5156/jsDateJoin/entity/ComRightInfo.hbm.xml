@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.job5156.jsDateJoin.entity.ComRightInfo" dynamic-insert="true" dynamic-update="true"  table="Com_RightInfo">
+    <id name="id" type="java.lang.Integer" unsaved-value="null" >
+		<column name="referenceid" not-null="true"/>
+		<generator class="native"/>
+	</id>
+	<property name="comid" />
+	<property name="memberclass" />
+	<property name="othermember" />
+	<property name="beginvaliddate" />
+	<property name="endvaliddate" />
+	<property name="maxposnum" />
+	<property name="maxresumenum" />
+	<property name="viewingresume" />
+	<property name="viewedresume" />
+	<property name="checkuser" />
+	<property name="checkdate" />
+	<property name="maxmsgnum" />
+	<property name="msgingnum" />
+	<property name="saler" />
+	<property name="displayflag" />
+	<property name="money" />
+	<property name="countnum" />
+	<property name="usenum" />
+	<property name="mark" />
+	<property name="displayflagsee" />
+	<property name="creDate" />
+	<property name="creUserName" />
+	<property name="restrictArea" />
+	<property name="accountNum" />
+	<property name="careergo" />
+	
+	<many-to-one name="comBaseInfo"  insert="false" update="false" outer-join="false"
+        	class = "com.job5156.jsDateJoin.entity.ComBaseInfo"
+        	column = "comid" />
+			
+</class>
+</hibernate-mapping>

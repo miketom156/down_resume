@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+     "-//Hibernate/Hibernate Configuration DTD//EN"
+       "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd"> 
+       
+       
+<hibernate-configuration>
+
+<session-factory>
+
+
+		<property name="show_sql">false</property>	
+			
+		
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://192.168.8.29/Job5156?zeroDateTimeBehavior=convertToNull</property>
+        <property name="connection.username">job2008</property>
+        <property name="connection.password">job2008</property>
+        <property name="hibernate.cache.use_query_cache">false</property>
+		<property name="hibernate.cache.use_second_level_cache">false</property> 
+		
+		<!--
+			<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+	        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+	        <property name="connection.url">jdbc:mysql://192.168.2.210/Job5156?zeroDateTimeBehavior=convertToNull</property>
+	        <property name="connection.username">jzx8020</property>
+	        <property name="connection.password">jzx2080@5156</property>
+	        <property name="hibernate.cache.use_query_cache">false</property>
+			<property name="hibernate.cache.use_second_level_cache">false</property>
+		-->
+		<!--
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://192.168.2.232/Job5156?zeroDateTimeBehavior=convertToNull</property>
+        <property name="connection.username">impchitone</property>
+        <property name="connection.password">chitone5156@job</property>
+        <property name="hibernate.cache.use_query_cache">false</property>
+		<property name="hibernate.cache.use_second_level_cache">false</property>
+		-->
+		
+		<!--  
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://192.168.2.187/changsha?zeroDateTimeBehavior=convertToNull</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">123</property>
+        -->
+
+		<!--property name="show_sql">true</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://219.136.248.183/job5156bak?zeroDateTimeBehavior=convertToNull</property>
+        <property name="connection.username">downdata</property>
+        <property name="connection.password">qweqazwsx@123.com</property-->
+        <!--  
+        <mapping resource="com/job5156/foshan/FoShanResume.hbm.xml"/>
+        <mapping resource="com/job5156/jiangmen/JiangMenResume.hbm.xml"/>
+		<mapping resource="com/job5156/ningbo/NingBoResume.hbm.xml"/>
+		-->
+		 <!-- 
+		<mapping resource="com/job5156/jsDateJoin/entity/ComBaseInfo.hbm.xml"/>
+		<mapping resource="com/job5156/jsDateJoin/entity/ComPosition.hbm.xml"/>
+		<mapping resource="com/job5156/jsDateJoin/entity/ComUserInfo.hbm.xml"/>
+		<mapping resource="com/job5156/jsDateJoin/entity/PersonBaseInfo.hbm.xml"/>
+		<mapping resource="com/job5156/jsDateJoin/entity/test1.hbm.xml"/>
+		
+		<mapping resource="com/job5156/jsDateJoin/entity/PersonIntent.hbm.xml"/>
+		<mapping resource="com/job5156/jsDateJoin/entity/PersonSchool.hbm.xml"/>
+		<mapping resource="com/job5156/jsDateJoin/entity/PersonWork.hbm.xml"/>
+		<mapping resource="com/job5156/jsDateJoin/entity/PersonSkill.hbm.xml"/>
+		
+		<mapping resource="com/job5156/temp/entity/CarnivalBean.hbm.xml"/>	
+		 -->
+		<mapping resource="com/job5156/jsDateJoin/entity/ComBaseInfo.hbm.xml"/>
+		<mapping resource="com/job5156/jsDateJoin/entity/ComPosition.hbm.xml"/>
+		<mapping resource="com/job5156/jsDateJoin/entity/ComRightInfo.hbm.xml"/>
+		<mapping resource="com/job5156/jsDateJoin/entity/ComUserInfo.hbm.xml"/> 	
+		<mapping resource="com/job5156/jsDateJoin/entity/ComTranHistory.hbm.xml"/> 
+</session-factory>
+
+</hibernate-configuration>
